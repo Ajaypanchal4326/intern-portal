@@ -1,0 +1,25 @@
+.leaderboard-container {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 40px;
+}
+.leaderboard-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.top-donor {
+  background-color: #ffe680;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}

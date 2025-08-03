@@ -1,0 +1,162 @@
+.navbar {
+  background-color: #222;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.navbar button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar button:hover {
+  background: #e60000;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo .logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover {
+  background: #444;
+  color: #00bfff;
+  text-decoration: none;
+}
+.nav-links .active {
+  background: #00bfff;
+  color: #fff;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.navbar-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #00bfff;
+  background: #fff;
+}
+.navbar-username {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.navbar button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.navbar button:hover {
+  background: #e60000;
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+  .navbar {
+    height: 60px;
+    font-size: 25px;
+  }
+  .navbar-logo {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .navbar-left {
+    gap: 15px;
+  }
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    padding: 5px 10px;
+  }
+
+  .navbar-avatar {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar-user,
+  .navbar-avatar,
+  .navbar-username {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 14px;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navbar-logo {
+    white-space: nowrap;
+    color: rgb(122, 175, 158);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    padding: 4px 8px;
+    font-size: 1rem;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .navbar button {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+  }
+}
