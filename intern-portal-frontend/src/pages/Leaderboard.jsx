@@ -7,7 +7,7 @@ export default function Leaderboard() {
   const rewardIcons = ["🏆", "🥈", "🥉", "⭐", "💎"];
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/leaderboard")
+    fetch("https://intern-portal-backend-3gui.onrender.com/api/leaderboard")
       .then((res) => res.json())
       .then((info) => setLeaders(info))
       .catch((err) => console.error(err));
