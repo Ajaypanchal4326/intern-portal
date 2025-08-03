@@ -11,8 +11,6 @@ export default function Dashboard() {
     "🎁 Gift Card",
     "📜 Certificate",
   ];
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("userData"));
     if (user) {
@@ -37,7 +35,7 @@ export default function Dashboard() {
 
       setData(storedData);
     }
-  }, []);
+  }, [rewardsList]);
 
   if (!data) return <p>Loading...</p>;
 
