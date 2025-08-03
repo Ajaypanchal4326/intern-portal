@@ -12,6 +12,7 @@ export default function Dashboard() {
     "📜 Certificate",
   ];
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("userData"));
     if (user) {
