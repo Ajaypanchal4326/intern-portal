@@ -1,16 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
-import Leaderboard from "./pages/Leaderboard";
+// In App.jsx - temporary test
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
