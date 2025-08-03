@@ -1,0 +1,9 @@
+# Ignore dependencies
+intern-portal-frontend/node_modules/
+intern-portal-backend/node_modules/
+
+# Logs
+*.log
+
+# Build output
+intern-portal-frontend/build/
